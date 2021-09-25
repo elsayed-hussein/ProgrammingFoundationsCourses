@@ -188,7 +188,7 @@ Link: https://www.linkedin.com/learning/programming-foundations-fundamentals-3?c
     end if
     ```
 
-    ![Untitled](01%20Fundamentals%20309578e872fd4dde90052c05cd9ff01b/Untitled.png)
+    ![Untitled](Untitled.png)
 
 - **Working with simple conditions**
 
