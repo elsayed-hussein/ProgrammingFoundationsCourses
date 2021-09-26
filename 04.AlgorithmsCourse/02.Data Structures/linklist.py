@@ -29,13 +29,25 @@ class LinkedList(object):
     def get_count(self):
         return self.count
 
+    # What I want to is: 
+    # 1. define a new node at var. 
+    # 2. Let the next of it = old head
+    # 3. Change the head to new node 
+    # 4. Node count +1
+    
     def insert(self, data):
-        new_node = Node(data)
-        new_node.set_next(self.head)
-        self.head = new_node
-        self.count += 1
+        # TODO : insert a new node
+        new_node = Node(data)           # define a new node at var
+        new_node.set_next(self.head)    # next = old head
+        self.head = new_node            #head to new node
+        self.count += 1                 #Node count +1
+    
+    # What I want to is: 
+    # 1. let itrate through the nodes
+    # 2. check if any one val = val I need to find
 
     def find(self, val):
+        # TODO: find the first item with a given value
         item = self.head
         while (item != None):
             if item.get_data() == val:
@@ -45,10 +57,11 @@ class LinkedList(object):
         return None
 
     def deleteAt(self, idx):
-        if idx > self.count:
+        # TODO: delete an item at given index
+        if idx > self.count-1:
             return
-        if self.head == None:
-            return
+        if idx == 0:
+            self.head = self.head.get_next()
         else:
             tempIdx = 0
             node = self.head
@@ -71,7 +84,6 @@ itemlist.insert(38)
 itemlist.insert(49)
 itemlist.insert(13)
 itemlist.insert(15)
-
 itemlist.dump_list()
 
 # exercise the list

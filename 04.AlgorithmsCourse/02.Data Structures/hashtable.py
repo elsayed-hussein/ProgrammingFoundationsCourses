@@ -2,7 +2,7 @@
 
 
 # create a hashtable all at once
-items1 = dict({"key1": 1, "key2": 2, "key3": "three"})
+items1 = dict({"key1": 'a', "key2": 'b', "key3": 'c'})
 print(items1)
 
 
